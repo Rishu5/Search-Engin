@@ -21,12 +21,7 @@ public class Converterfile {
 		File f = new File((System.getProperty("user.home") + File.separator + "Desktop") + File.separator
 				+ "Rishu_First_Project");
 		f.mkdir();
-		
-		
-		
-		
-		
-		Document doc1 = null;
+ 		Document doc1 = null;
 		try {
 			doc1 = new Document(filepath);
 		} catch (Exception e) {

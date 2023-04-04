@@ -18,19 +18,21 @@ public class FileControler {
 	
 	@RequestMapping("convert")
 	public void converter(HttpServletRequest request) {
-
-		
+		Part part=null;
+		String path=null;
 		try {
-			Part part = request.getPart("file");
 			
-			InputStream inputstr = part.getInputStream();
-			
+		 path=(String)	request.getParameter("file");
 			
 			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (ServletException e) {
+			
+		// part = request.getPart("file");
+			
+		//	InputStream inputstr = part.getInputStream();
+			
+			
+			
+		}  catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -39,7 +41,7 @@ public class FileControler {
 		
 		
 		//String filepath = path;
-		System.out.println("this is file path  " );
+		System.out.println("this is file path  "+path );
 		
 		//Converterfile con=new Converterfile(filepath);
 //		try {

@@ -1,3 +1,6 @@
+
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,12 +11,43 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
+<link href="<c:url value="/resources/css/style.css"/>">
+
+<script src="<c:url value="/resources/js/script.js"/>"></script>
+
     <title>Hello, world!</title>
   </head>
+  
+  <style>
+.hovering-image{
+    position: fixed;
+    left: 20%;
+    top:3%;
+    height: 20%;
+    width 10%;
+}
+.hoveringbody{
+ 	position: fixed;
+ 	left: 19%;
+    top:42%;
+    height: 100%;
+    width 40%;
+}
+
+</style>
+  
+  
+  
   <body>
    
+   <div class="hovering-image">
+        <img  alt="my image" src=" <c:url value="/resources/image/googlegif.gif"/>" >
+    </div>
+    
+   <div class="hoveringbody">
     <div class="container">
-    <div class="card mx-auto mt-5 bg-primary" style="width: 50%">
+    <div class="card mx-auto mt-5 bg-primary" style="width: 265%">
     
     <div class="card-body py-3">
     <h3 class="text-center text-white">Bharat Search Engine</h3>
@@ -40,6 +74,7 @@
     </div>
     
     
+    </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
